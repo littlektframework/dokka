@@ -1,0 +1,984 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>core</title>
+<link href="../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../scripts/sourceset_dependencies.js" async></script>
+<link href="../styles/style.css" rel="Stylesheet">
+<link href="../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../styles/main.css" rel="Stylesheet">
+<link href="../styles/prism.css" rel="Stylesheet">
+<link href="../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../scripts/main.js" defer></script>
+<script type="text/javascript" src="../scripts/prism.js" async></script>
+<script type="text/javascript" src="../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../index.html">
+<span>littlekt</span>            </a>    </div>
+    <div>0.6.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":core:dokkaHtmlPartial/androidMain">android</button>
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":core:dokkaHtmlPartial/commonMain">common</button>
+                <button class="platform-tag platform-selector js-like" data-active="" data-filter=":core:dokkaHtmlPartial/jsMain">js</button>
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":core:dokkaHtmlPartial/jvmMain">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="core::////PointingToDeclaration//1727519406">
+  <div class="breadcrumbs"></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>core</span></span></h1>
+  </div>
+  <h2 class="">Packages</h2>
+  <div class="table"><a data-name="640349454%2FPackages%2F-1487232962" anchor-label="com.lehaine.littlekt" id="640349454%2FPackages%2F-1487232962" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt/index.html">com.lehaine.littlekt</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="640349454%2FPackages%2F-1487232962"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">android</div>
+              <div class="platform-tag common-like">common</div>
+              <div class="platform-tag js-like">js</div>
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-320455268%2FPackages%2F617994450" anchor-label="com.lehaine.littlekt.async" id="-320455268%2FPackages%2F617994450" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.async/index.html">com.lehaine.littlekt.async</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-320455268%2FPackages%2F617994450"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+              <div class="platform-tag js-like">js</div>
+              <div class="platform-tag common-like">jvmAndroid</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-2039907722%2FPackages%2F-1487232962" anchor-label="com.lehaine.littlekt.audio" id="-2039907722%2FPackages%2F-1487232962" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.audio/index.html">com.lehaine.littlekt.audio</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2039907722%2FPackages%2F-1487232962"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">android</div>
+              <div class="platform-tag common-like">common</div>
+              <div class="platform-tag js-like">js</div>
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1439381920%2FPackages%2F1727519406" anchor-label="com.lehaine.littlekt.file" id="-1439381920%2FPackages%2F1727519406" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain :core:dokkaHtmlPartial/jvmMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain :core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain :core:dokkaHtmlPartial/jvmMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.file/index.html">com.lehaine.littlekt.file</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1439381920%2FPackages%2F1727519406"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">android</div>
+              <div class="platform-tag common-like">common</div>
+              <div class="platform-tag js-like">js</div>
+              <div class="platform-tag jvm-like">jvm</div>
+              <div class="platform-tag common-like">jvmAndroid</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="227437273%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.file.font.ttf" id="227437273%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.file.font.ttf/index.html">com.lehaine.littlekt.file.font.ttf</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="227437273%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-2004998399%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.file.ldtk" id="-2004998399%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.file.ldtk/index.html">com.lehaine.littlekt.file.ldtk</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2004998399%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1648384536%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.file.tiled" id="-1648384536%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.file.tiled/index.html">com.lehaine.littlekt.file.tiled</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1648384536%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1244432395%2FPackages%2F-1487232962" anchor-label="com.lehaine.littlekt.file.vfs" id="-1244432395%2FPackages%2F-1487232962" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.file.vfs/index.html">com.lehaine.littlekt.file.vfs</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1244432395%2FPackages%2F-1487232962"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">android</div>
+              <div class="platform-tag common-like">common</div>
+              <div class="platform-tag js-like">js</div>
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1972880914%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graph" id="-1972880914%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graph/index.html">com.lehaine.littlekt.graph</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1972880914%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1654393478%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graph.node" id="1654393478%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graph.node/index.html">com.lehaine.littlekt.graph.node</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1654393478%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="283949147%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graph.node.annotation" id="283949147%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graph.node.annotation/index.html">com.lehaine.littlekt.graph.node.annotation</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="283949147%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="2103498985%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graph.node.internal" id="2103498985%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graph.node.internal/index.html">com.lehaine.littlekt.graph.node.internal</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2103498985%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1150878176%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graph.node.node2d" id="1150878176%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graph.node.node2d/index.html">com.lehaine.littlekt.graph.node.node2d</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1150878176%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="896141631%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graph.node.node3d" id="896141631%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graph.node.node3d/index.html">com.lehaine.littlekt.graph.node.node3d</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="896141631%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1916509950%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graph.node.render" id="-1916509950%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graph.node.render/index.html">com.lehaine.littlekt.graph.node.render</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1916509950%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="2004935418%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graph.node.resource" id="2004935418%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graph.node.resource/index.html">com.lehaine.littlekt.graph.node.resource</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2004935418%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1997446784%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graph.node.ui" id="-1997446784%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graph.node.ui/index.html">com.lehaine.littlekt.graph.node.ui</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1997446784%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1491868241%2FPackages%2F-1487232962" anchor-label="com.lehaine.littlekt.graphics" id="-1491868241%2FPackages%2F-1487232962" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics/index.html">com.lehaine.littlekt.graphics</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1491868241%2FPackages%2F-1487232962"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">android</div>
+              <div class="platform-tag common-like">common</div>
+              <div class="platform-tag js-like">js</div>
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="847280538%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.g2d" id="847280538%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.g2d/index.html">com.lehaine.littlekt.graphics.g2d</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="847280538%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1859755623%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.g2d.font" id="1859755623%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.g2d.font/index.html">com.lehaine.littlekt.graphics.g2d.font</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1859755623%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="799711757%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.g2d.shape" id="799711757%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.g2d.shape/index.html">com.lehaine.littlekt.graphics.g2d.shape</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="799711757%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1662287258%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.g2d.tilemap" id="1662287258%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.g2d.tilemap/index.html">com.lehaine.littlekt.graphics.g2d.tilemap</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1662287258%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="751952903%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.g2d.tilemap.ldtk" id="751952903%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.g2d.tilemap.ldtk/index.html">com.lehaine.littlekt.graphics.g2d.tilemap.ldtk</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="751952903%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-2082240094%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.g2d.tilemap.tiled" id="-2082240094%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.g2d.tilemap.tiled/index.html">com.lehaine.littlekt.graphics.g2d.tilemap.tiled</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2082240094%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1472579660%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.g3d.model" id="-1472579660%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.g3d.model/index.html">com.lehaine.littlekt.graphics.g3d.model</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1472579660%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1052830520%2FPackages%2F617994450" anchor-label="com.lehaine.littlekt.graphics.gl" id="-1052830520%2FPackages%2F617994450" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.gl/index.html">com.lehaine.littlekt.graphics.gl</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1052830520%2FPackages%2F617994450"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+              <div class="platform-tag js-like">js</div>
+              <div class="platform-tag common-like">jvmAndroid</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1475987640%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.shader" id="-1475987640%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.shader/index.html">com.lehaine.littlekt.graphics.shader</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1475987640%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-854394387%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.shader.generator" id="-854394387%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.shader.generator/index.html">com.lehaine.littlekt.graphics.shader.generator</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-854394387%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1611728342%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.shader.generator.delegate" id="-1611728342%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.shader.generator.delegate/index.html">com.lehaine.littlekt.graphics.shader.generator.delegate</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1611728342%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-974406369%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.shader.generator.type" id="-974406369%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.shader.generator.type/index.html">com.lehaine.littlekt.graphics.shader.generator.type</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-974406369%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1485700041%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.shader.generator.type.func" id="-1485700041%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.shader.generator.type.func/index.html">com.lehaine.littlekt.graphics.shader.generator.type.func</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1485700041%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1391469935%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.shader.generator.type.mat" id="-1391469935%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.shader.generator.type.mat/index.html">com.lehaine.littlekt.graphics.shader.generator.type.mat</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1391469935%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1247071303%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.shader.generator.type.sampler" id="-1247071303%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.shader.generator.type.sampler/index.html">com.lehaine.littlekt.graphics.shader.generator.type.sampler</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1247071303%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="657538847%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.shader.generator.type.scalar" id="657538847%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.shader.generator.type.scalar/index.html">com.lehaine.littlekt.graphics.shader.generator.type.scalar</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="657538847%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="364962757%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.shader.generator.type.vec" id="364962757%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.shader.generator.type.vec/index.html">com.lehaine.littlekt.graphics.shader.generator.type.vec</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="364962757%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1118893704%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.shader.shaders" id="1118893704%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.shader.shaders/index.html">com.lehaine.littlekt.graphics.shader.shaders</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1118893704%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1485876891%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.graphics.util" id="-1485876891%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.graphics.util/index.html">com.lehaine.littlekt.graphics.util</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1485876891%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-2129171094%2FPackages%2F-1487232962" anchor-label="com.lehaine.littlekt.input" id="-2129171094%2FPackages%2F-1487232962" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.input/index.html">com.lehaine.littlekt.input</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2129171094%2FPackages%2F-1487232962"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">android</div>
+              <div class="platform-tag common-like">common</div>
+              <div class="platform-tag js-like">js</div>
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="307070725%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.input.gesture" id="307070725%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.input.gesture/index.html">com.lehaine.littlekt.input.gesture</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="307070725%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="50605028%2FPackages%2F1727519406" anchor-label="com.lehaine.littlekt.log" id="50605028%2FPackages%2F1727519406" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain :core:dokkaHtmlPartial/jvmMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain :core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/androidMain :core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain :core:dokkaHtmlPartial/jvmMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.log/index.html">com.lehaine.littlekt.log</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="50605028%2FPackages%2F1727519406"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">android</div>
+              <div class="platform-tag common-like">common</div>
+              <div class="platform-tag js-like">js</div>
+              <div class="platform-tag jvm-like">jvm</div>
+              <div class="platform-tag common-like">jvmAndroid</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1763065620%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.math" id="-1763065620%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.math/index.html">com.lehaine.littlekt.math</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1763065620%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-616994046%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.math.geom" id="-616994046%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.math.geom/index.html">com.lehaine.littlekt.math.geom</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-616994046%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1673137022%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.math.spatial" id="-1673137022%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.math.spatial/index.html">com.lehaine.littlekt.math.spatial</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1673137022%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="965084518%2FPackages%2F617994450" anchor-label="com.lehaine.littlekt.util" id="965084518%2FPackages%2F617994450" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.util/index.html">com.lehaine.littlekt.util</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="965084518%2FPackages%2F617994450"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+              <div class="platform-tag js-like">js</div>
+              <div class="platform-tag common-like">jvmAndroid</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1937462719%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.util.datastructure" id="-1937462719%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.util.datastructure/index.html">com.lehaine.littlekt.util.datastructure</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1937462719%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-715974135%2FPackages%2F617994450" anchor-label="com.lehaine.littlekt.util.internal" id="-715974135%2FPackages%2F617994450" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.util.internal/index.html">com.lehaine.littlekt.util.internal</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-715974135%2FPackages%2F617994450"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+              <div class="platform-tag js-like">js</div>
+              <div class="platform-tag common-like">jvmAndroid</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="1330948370%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.util.packer" id="1330948370%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.util.packer/index.html">com.lehaine.littlekt.util.packer</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1330948370%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-391886158%2FPackages%2F-2011752812" anchor-label="com.lehaine.littlekt.util.viewport" id="-391886158%2FPackages%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.util.viewport/index.html">com.lehaine.littlekt.util.viewport</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-391886158%2FPackages%2F-2011752812"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag common-like">common</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="654015049%2FPackages%2F223226054" anchor-label="com.lehaine.littlekt.view" id="654015049%2FPackages%2F223226054" data-filterable-set=":core:dokkaHtmlPartial/androidMain"></a>
+    <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/androidMain" data-filterable-set=":core:dokkaHtmlPartial/androidMain">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="com.lehaine.littlekt.view/index.html">com.lehaine.littlekt.view</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="654015049%2FPackages%2F223226054"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">android</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+

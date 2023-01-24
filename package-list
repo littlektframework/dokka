@@ -1,0 +1,68 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.lehaine.littlekt.graphics.gl/GlBuffer.Companion///PointingToDeclaration/core/com.lehaine.littlekt.graphics.gl/-gl-buffer/[jvm-android]-companion/index.html
+$dokka.location:com.lehaine.littlekt.graphics.gl/GlBuffer/bufferId/#/PointingToDeclaration/core/com.lehaine.littlekt.graphics.gl/-gl-buffer/[jvm-android]buffer-id.html
+$dokka.location:com.lehaine.littlekt.graphics.gl/GlFrameBuffer/equals/#kotlin.Any?/PointingToDeclaration/core/com.lehaine.littlekt.graphics.gl/-gl-frame-buffer/[jvm-android]equals.html
+$dokka.location:com.lehaine.littlekt.graphics.gl/GlFrameBuffer/hashCode/#/PointingToDeclaration/core/com.lehaine.littlekt.graphics.gl/-gl-frame-buffer/[jvm-android]hash-code.html
+$dokka.location:com.lehaine.littlekt.graphics.gl/GlFrameBuffer/toString/#/PointingToDeclaration/core/com.lehaine.littlekt.graphics.gl/-gl-frame-buffer/[jvm-android]to-string.html
+$dokka.location:com.lehaine.littlekt.log/Console/log/#com.lehaine.littlekt.log.BaseConsole.Kind#kotlin.Array[kotlin.Any?]/PointingToDeclaration/core/com.lehaine.littlekt.log/-console/[jvm]log.html
+$dokka.location:com.lehaine.littlekt.log/DefaultLogOutput/output/#com.lehaine.littlekt.log.Logger#com.lehaine.littlekt.log.Logger.Level#kotlin.Any?/PointingToDeclaration/core/com.lehaine.littlekt.log/-default-log-output/[jvm-android]output.html
+$dokka.location:com.lehaine.littlekt/LittleKtProps/backgroundColor/#/PointingToDeclaration/core/com.lehaine.littlekt/-little-kt-props/[jvm]background-color.html
+$dokka.location:com.lehaine.littlekt/LittleKtProps/height/#/PointingToDeclaration/core/com.lehaine.littlekt/-little-kt-props/[jvm]height.html
+$dokka.location:com.lehaine.littlekt/LittleKtProps/title/#/PointingToDeclaration/core/com.lehaine.littlekt/-little-kt-props/[jvm]title.html
+$dokka.location:com.lehaine.littlekt/LittleKtProps/width/#/PointingToDeclaration/core/com.lehaine.littlekt/-little-kt-props/[jvm]width.html
+module:core
+com.lehaine.littlekt
+com.lehaine.littlekt.async
+com.lehaine.littlekt.audio
+com.lehaine.littlekt.file
+com.lehaine.littlekt.file.font.ttf
+com.lehaine.littlekt.file.ldtk
+com.lehaine.littlekt.file.tiled
+com.lehaine.littlekt.file.vfs
+com.lehaine.littlekt.graph
+com.lehaine.littlekt.graph.node
+com.lehaine.littlekt.graph.node.annotation
+com.lehaine.littlekt.graph.node.internal
+com.lehaine.littlekt.graph.node.node2d
+com.lehaine.littlekt.graph.node.node3d
+com.lehaine.littlekt.graph.node.render
+com.lehaine.littlekt.graph.node.resource
+com.lehaine.littlekt.graph.node.ui
+com.lehaine.littlekt.graphics
+com.lehaine.littlekt.graphics.g2d
+com.lehaine.littlekt.graphics.g2d.font
+com.lehaine.littlekt.graphics.g2d.shape
+com.lehaine.littlekt.graphics.g2d.tilemap
+com.lehaine.littlekt.graphics.g2d.tilemap.ldtk
+com.lehaine.littlekt.graphics.g2d.tilemap.tiled
+com.lehaine.littlekt.graphics.g3d.model
+com.lehaine.littlekt.graphics.gl
+com.lehaine.littlekt.graphics.shader
+com.lehaine.littlekt.graphics.shader.generator
+com.lehaine.littlekt.graphics.shader.generator.delegate
+com.lehaine.littlekt.graphics.shader.generator.type
+com.lehaine.littlekt.graphics.shader.generator.type.func
+com.lehaine.littlekt.graphics.shader.generator.type.mat
+com.lehaine.littlekt.graphics.shader.generator.type.sampler
+com.lehaine.littlekt.graphics.shader.generator.type.scalar
+com.lehaine.littlekt.graphics.shader.generator.type.vec
+com.lehaine.littlekt.graphics.shader.shaders
+com.lehaine.littlekt.graphics.util
+com.lehaine.littlekt.input
+com.lehaine.littlekt.input.gesture
+com.lehaine.littlekt.log
+com.lehaine.littlekt.math
+com.lehaine.littlekt.math.geom
+com.lehaine.littlekt.math.spatial
+com.lehaine.littlekt.util
+com.lehaine.littlekt.util.datastructure
+com.lehaine.littlekt.util.internal
+com.lehaine.littlekt.util.packer
+com.lehaine.littlekt.util.viewport
+com.lehaine.littlekt.view
+module:tools
+com.lehaine.littlekt.tools
+com.lehaine.littlekt.tools.texturepacker
+module:texturepacker
+com.lehaine.littlekt.gradle.texturepacker

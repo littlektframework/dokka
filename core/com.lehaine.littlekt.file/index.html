@@ -1,0 +1,588 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.lehaine.littlekt.file</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../index.html">
+<span>littlekt</span>            </a>    </div>
+    <div>0.6.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":core:dokkaHtmlPartial/androidMain">android</button>
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":core:dokkaHtmlPartial/commonMain">common</button>
+                <button class="platform-tag platform-selector js-like" data-active="" data-filter=":core:dokkaHtmlPartial/jsMain">js</button>
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":core:dokkaHtmlPartial/jvmMain">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="core::com.lehaine.littlekt.file////PointingToDeclaration//1727519406">
+  <div class="breadcrumbs"><a href="../index.html">core</a><span class="delimiter">/</span><span class="current">com.lehaine.littlekt.file</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Functions">Functions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="-193829076%2FClasslikes%2F223226054" anchor-label="AndroidVfs" id="-193829076%2FClasslikes%2F223226054" data-filterable-set=":core:dokkaHtmlPartial/androidMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/androidMain" data-filterable-set=":core:dokkaHtmlPartial/androidMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-android-vfs/index.html"><span>Android</span><wbr><span><span>Vfs</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-193829076%2FClasslikes%2F223226054"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/androidMain" data-filterable-set=":core:dokkaHtmlPartial/androidMain" data-active="" data-toggle=":core:dokkaHtmlPartial/androidMain">android</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/androidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-android-vfs/index.html">AndroidVfs</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">androidCtx<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">assets<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/res/AssetManager.html">AssetManager</a><span class="token punctuation">, </span></span><span class="parameter ">sharedPreferences<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html">SharedPreferences</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>context<span class="token operator">: </span><a href="../../core/com.lehaine.littlekt/-context/index.html">Context</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>logger<span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.log/-logger/index.html">Logger</a><span class="token punctuation">, </span></span><span class="parameter ">storageBaseDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">assetsBaseDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="../../core/com.lehaine.littlekt.file/-vfs/index.html">Vfs</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-399187683%2FClasslikes%2F-2011752812" anchor-label="AssetRef" id="-399187683%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-asset-ref/index.html"><span>Asset</span><wbr><span><span>Ref</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-399187683%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-asset-ref/index.html">AssetRef</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-386905967%2FClasslikes%2F-2011752812" anchor-label="Base64" id="-386905967%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-base64/index.html"><span><span>Base64</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-386905967%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="-base64/index.html">Base64</a></div><div class="brief "><p class="paragraph">This class consists exclusively of static methods for obtaining encoders and decoders for the Base64 encoding scheme. The implementation of this class supports the following types of Base64 as specified in <a href="http://www.ietf.org/rfc/rfc4648.txt">RFC 4648</a> and <a href="http://www.ietf.org/rfc/rfc2045.txt">RFC 2045</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-961260864%2FClasslikes%2F-2011752812" anchor-label="Buffer" id="-961260864%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-buffer/index.html"><span><span>Buffer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-961260864%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-buffer/index.html">Buffer</a></div><div class="brief "><p class="paragraph">Super class for platform-dependent buffers. On the JVM these buffers directly map to the corresponding NIO buffers.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1852033304%2FClasslikes%2F-2011752812" anchor-label="ByteBuffer" id="1852033304%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-byte-buffer/index.html"><span>Byte</span><wbr><span><span>Buffer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1852033304%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-byte-buffer/index.html">ByteBuffer</a> : <a href="-buffer/index.html">Buffer</a></div><div class="brief "><p class="paragraph">A <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a> buffer for mixed types. All buffer positions are in bytes.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="151039832%2FClasslikes%2F1371389236" anchor-label="ByteBufferImpl" id="151039832%2FClasslikes%2F1371389236" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-byte-buffer-impl/index.html"><span>Byte</span><wbr><span>Buffer</span><wbr><span><span>Impl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="151039832%2FClasslikes%2F1371389236"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmAndroidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-byte-buffer-impl/index.html">ByteBufferImpl</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buffer<span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span></span></span><span class="token punctuation">)</span> : <a href="-generic-buffer/index.html">GenericBuffer</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token operator">&gt; </span>, <a href="../../core/com.lehaine.littlekt.file/-byte-buffer/index.html">ByteBuffer</a></div><div class="brief "><p class="paragraph">ByteBuffer implementation.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2074286377%2FClasslikes%2F-2011752812" anchor-label="ByteSequenceStream" id="-2074286377%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-byte-sequence-stream/index.html"><span>Byte</span><wbr><span>Sequence</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2074286377%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-byte-sequence-stream/index.html">ByteSequenceStream</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.sequences/-sequence/index.html">Sequence</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">A buffer sequence stream to read a sequence of bytes.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2045471614%2FClasslikes%2F-2011752812" anchor-label="FileNotFoundException" id="2045471614%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-file-not-found-exception/index.html"><span>File</span><wbr><span>Not</span><wbr><span>Found</span><wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2045471614%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-file-not-found-exception/index.html">FileNotFoundException</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html">Exception</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1195472006%2FClasslikes%2F-2011752812" anchor-label="FloatBuffer" id="1195472006%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-float-buffer/index.html"><span>Float</span><wbr><span><span>Buffer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1195472006%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-float-buffer/index.html">FloatBuffer</a> : <a href="-buffer/index.html">Buffer</a></div><div class="brief "><p class="paragraph">A <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a> buffer.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1692470330%2FClasslikes%2F1371389236" anchor-label="FloatBufferImpl" id="-1692470330%2FClasslikes%2F1371389236" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-float-buffer-impl/index.html"><span>Float</span><wbr><span>Buffer</span><wbr><span><span>Impl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1692470330%2FClasslikes%2F1371389236"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmAndroidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-float-buffer-impl/index.html">FloatBufferImpl</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buffer<span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span></span></span><span class="token punctuation">)</span> : <a href="-generic-buffer/index.html">GenericBuffer</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token operator">&gt; </span>, <a href="../../core/com.lehaine.littlekt.file/-float-buffer/index.html">FloatBuffer</a></div><div class="brief "><p class="paragraph">FloatBuffer buffer implementation</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-743146133%2FClasslikes%2F1371389236" anchor-label="GenericBuffer" id="-743146133%2FClasslikes%2F1371389236" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-generic-buffer/index.html"><span>Generic</span><wbr><span><span>Buffer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-743146133%2FClasslikes%2F1371389236"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmAndroidMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-generic-buffer/index.html">GenericBuffer</a><span class="token operator">&lt;</span><span class="token keyword">out </span><a href="-generic-buffer/index.html">B</a><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>capacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>buffer<span class="token operator">: </span><a href="-generic-buffer/index.html">B</a></span></span><span class="token punctuation">)</span> : <a href="../../core/com.lehaine.littlekt.file/-buffer/index.html">Buffer</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1933018216%2FClasslikes%2F1371389236" anchor-label="HttpCache" id="1933018216%2FClasslikes%2F1371389236" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-http-cache/index.html"><span>Http</span><wbr><span><span>Cache</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1933018216%2FClasslikes%2F1371389236"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmAndroidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-http-cache/index.html">HttpCache</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="812219816%2FClasslikes%2F-2011752812" anchor-label="IndexedByteSequenceStream" id="812219816%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-indexed-byte-sequence-stream/index.html"><span>Indexed</span><wbr><span>Byte</span><wbr><span>Sequence</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="812219816%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-indexed-byte-sequence-stream/index.html">IndexedByteSequenceStream</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>buffer<span class="token operator">: </span><a href="-byte-buffer/index.html">ByteBuffer</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>step<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span> : <a href="-byte-sequence-stream/index.html">ByteSequenceStream</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="709295315%2FClasslikes%2F-2011752812" anchor-label="IntBuffer" id="709295315%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-int-buffer/index.html"><span>Int</span><wbr><span><span>Buffer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="709295315%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-int-buffer/index.html">IntBuffer</a> : <a href="-buffer/index.html">Buffer</a></div><div class="brief "><p class="paragraph">An <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a> buffer.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-195195501%2FClasslikes%2F1371389236" anchor-label="IntBufferImpl" id="-195195501%2FClasslikes%2F1371389236" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-int-buffer-impl/index.html"><span>Int</span><wbr><span>Buffer</span><wbr><span><span>Impl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-195195501%2FClasslikes%2F1371389236"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmAndroidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-int-buffer-impl/index.html">IntBufferImpl</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buffer<span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span></span></span><span class="token punctuation">)</span> : <a href="-generic-buffer/index.html">GenericBuffer</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token operator">&gt; </span>, <a href="../../core/com.lehaine.littlekt.file/-int-buffer/index.html">IntBuffer</a></div><div class="brief "><p class="paragraph">IntBuffer buffer implementation</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1794741774%2FClasslikes%2F139861046" anchor-label="JsByteSequenceStream" id="1794741774%2FClasslikes%2F139861046" data-filterable-set=":core:dokkaHtmlPartial/jsMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jsMain" data-filterable-set=":core:dokkaHtmlPartial/jsMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-js-byte-sequence-stream/index.html"><span>Js</span><wbr><span>Byte</span><wbr><span>Sequence</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1794741774%2FClasslikes%2F139861046"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jsMain" data-filterable-set=":core:dokkaHtmlPartial/jsMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jsMain">js</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-js-byte-sequence-stream/index.html">JsByteSequenceStream</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>buffer<span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-byte-buffer/index.html">ByteBuffer</a></span></span><span class="token punctuation">)</span> : <a href="../../core/com.lehaine.littlekt.file/-byte-sequence-stream/index.html">ByteSequenceStream</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="218156152%2FClasslikes%2F1371389236" anchor-label="JvmByteSequenceStream" id="218156152%2FClasslikes%2F1371389236" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-jvm-byte-sequence-stream/index.html"><span>Jvm</span><wbr><span>Byte</span><wbr><span>Sequence</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="218156152%2FClasslikes%2F1371389236"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmAndroidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-jvm-byte-sequence-stream/index.html">JvmByteSequenceStream</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>stream<span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span></span></span><span class="token punctuation">)</span> : <a href="../../core/com.lehaine.littlekt.file/-byte-sequence-stream/index.html">ByteSequenceStream</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1108316706%2FClasslikes%2F-764817950" anchor-label="JvmVfs" id="-1108316706%2FClasslikes%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-jvm-vfs/index.html"><span>Jvm</span><wbr><span><span>Vfs</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1108316706%2FClasslikes%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-jvm-vfs/index.html">JvmVfs</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>context<span class="token operator">: </span><a href="../../core/com.lehaine.littlekt/-context/index.html">Context</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>logger<span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.log/-logger/index.html">Logger</a><span class="token punctuation">, </span></span><span class="parameter ">storageBaseDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">assetsBaseDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="../../core/com.lehaine.littlekt.file/-vfs/index.html">Vfs</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1467227959%2FClasslikes%2F-2011752812" anchor-label="LoadedAsset" id="1467227959%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-loaded-asset/index.html"><span>Loaded</span><wbr><span><span>Asset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1467227959%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-loaded-asset/index.html">LoadedAsset</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="175658451%2FClasslikes%2F-2011752812" anchor-label="LoadedRawAsset" id="175658451%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-loaded-raw-asset/index.html"><span>Loaded</span><wbr><span>Raw</span><wbr><span><span>Asset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="175658451%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-loaded-raw-asset/index.html">LoadedRawAsset</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>ref<span class="token operator">: </span><a href="-asset-ref/index.html">AssetRef</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="-byte-buffer/index.html">ByteBuffer</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span> : <a href="-loaded-asset/index.html">LoadedAsset</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1180425559%2FClasslikes%2F-2011752812" anchor-label="RawAssetRef" id="1180425559%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-raw-asset-ref/index.html"><span>Raw</span><wbr><span>Asset</span><wbr><span><span>Ref</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1180425559%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-raw-asset-ref/index.html">RawAssetRef</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>isLocal<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span> : <a href="-asset-ref/index.html">AssetRef</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1207163300%2FClasslikes%2F-2011752812" anchor-label="SequenceAssetRef" id="-1207163300%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-sequence-asset-ref/index.html"><span>Sequence</span><wbr><span>Asset</span><wbr><span><span>Ref</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1207163300%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-sequence-asset-ref/index.html">SequenceAssetRef</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>url<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-asset-ref/index.html">AssetRef</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-478274697%2FClasslikes%2F-2011752812" anchor-label="SequenceStreamCreatedAsset" id="-478274697%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-sequence-stream-created-asset/index.html"><span>Sequence</span><wbr><span>Stream</span><wbr><span>Created</span><wbr><span><span>Asset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-478274697%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-sequence-stream-created-asset/index.html">SequenceStreamCreatedAsset</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>ref<span class="token operator">: </span><a href="-asset-ref/index.html">AssetRef</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>sequence<span class="token operator">: </span><a href="-byte-sequence-stream/index.html">ByteSequenceStream</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span> : <a href="-loaded-asset/index.html">LoadedAsset</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-295186842%2FClasslikes%2F-2011752812" anchor-label="ShortBuffer" id="-295186842%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-short-buffer/index.html"><span>Short</span><wbr><span><span>Buffer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-295186842%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-short-buffer/index.html">ShortBuffer</a> : <a href="-buffer/index.html">Buffer</a></div><div class="brief "><p class="paragraph">A <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html">Short</a> buffer</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="835018150%2FClasslikes%2F1371389236" anchor-label="ShortBufferImpl" id="835018150%2FClasslikes%2F1371389236" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-short-buffer-impl/index.html"><span>Short</span><wbr><span>Buffer</span><wbr><span><span>Impl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="835018150%2FClasslikes%2F1371389236"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmAndroidMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-short-buffer-impl/index.html">ShortBufferImpl</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">buffer<span class="token operator">: </span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span></span></span><span class="token punctuation">)</span> : <a href="-generic-buffer/index.html">GenericBuffer</a><span class="token operator">&lt;</span><span class="token keyword"></span><span data-unresolved-link="/<Error class: unknown class>///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token operator">&gt; </span>, <a href="../../core/com.lehaine.littlekt.file/-short-buffer/index.html">ShortBuffer</a></div><div class="brief "><p class="paragraph">ShortBuffer buffer implementation</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-27824676%2FClasslikes%2F-2011752812" anchor-label="UnsupportedFileTypeException" id="-27824676%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-unsupported-file-type-exception/index.html"><span>Unsupported</span><wbr><span>File</span><wbr><span>Type</span><wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-27824676%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-unsupported-file-type-exception/index.html">UnsupportedFileTypeException</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">message<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-exception/index.html">Exception</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="562348383%2FClasslikes%2F-2011752812" anchor-label="Vfs" id="562348383%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-vfs/index.html"><span><span>Vfs</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="562348383%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">abstract </span><span class="token keyword">class </span><a href="-vfs/index.html">Vfs</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>context<span class="token operator">: </span><a href="../com.lehaine.littlekt/-context/index.html">Context</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>logger<span class="token operator">: </span><a href="../com.lehaine.littlekt.log/-logger/index.html">Logger</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>baseDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span></div><div class="brief "><p class="paragraph">A virtual file system that handles loading and streaming data and files.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-69443055%2FClasslikes%2F139861046" anchor-label="WebVfs" id="-69443055%2FClasslikes%2F139861046" data-filterable-set=":core:dokkaHtmlPartial/jsMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jsMain" data-filterable-set=":core:dokkaHtmlPartial/jsMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-web-vfs/index.html"><span>Web</span><wbr><span><span>Vfs</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-69443055%2FClasslikes%2F139861046"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jsMain" data-filterable-set=":core:dokkaHtmlPartial/jsMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jsMain">js</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="-web-vfs/index.html">WebVfs</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>context<span class="token operator">: </span><a href="../../core/com.lehaine.littlekt/-context/index.html">Context</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>logger<span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.log/-logger/index.html">Logger</a><span class="token punctuation">, </span></span><span class="parameter ">assetsBaseDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="-vfs/index.html#562348383%2FExtensions%2F139861046">Vfs</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="135942085%2FFunctions%2F617994450" anchor-label="createByteBuffer" id="135942085%2FFunctions%2F617994450" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="create-byte-buffer.html"><span>create</span><wbr><span>Byte</span><wbr><span><span>Buffer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="135942085%2FFunctions%2F617994450"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":core:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jsMain" data-filterable-set=":core:dokkaHtmlPartial/jsMain" data-toggle=":core:dokkaHtmlPartial/jsMain">js</button><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain" data-toggle=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-byte-buffer.html"><span class="token function">createByteBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-byte-buffer/index.html">ByteBuffer</a></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-byte-buffer.html"><span class="token function">createByteBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-byte-buffer/index.html">ByteBuffer</a></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-byte-buffer.html"><span class="token function">createByteBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">isBigEndian<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-byte-buffer/index.html">ByteBuffer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":core:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-byte-buffer.html"><span class="token function">createByteBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-byte-buffer/index.html">ByteBuffer</a></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-byte-buffer.html"><span class="token function">createByteBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-byte-buffer/index.html">ByteBuffer</a></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-byte-buffer.html"><span class="token function">createByteBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">isBigEndian<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-byte-buffer/index.html">ByteBuffer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":core:dokkaHtmlPartial/jvmAndroidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-byte-buffer.html"><span class="token function">createByteBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-byte-buffer/index.html">ByteBuffer</a></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-byte-buffer.html"><span class="token function">createByteBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-byte-buffer/index.html">ByteBuffer</a></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-byte-buffer.html"><span class="token function">createByteBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">isBigEndian<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-byte-buffer/index.html">ByteBuffer</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-56127256%2FFunctions%2F617994450" anchor-label="createFloatBuffer" id="-56127256%2FFunctions%2F617994450" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="create-float-buffer.html"><span>create</span><wbr><span>Float</span><wbr><span><span>Buffer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-56127256%2FFunctions%2F617994450"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":core:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jsMain" data-filterable-set=":core:dokkaHtmlPartial/jsMain" data-toggle=":core:dokkaHtmlPartial/jsMain">js</button><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain" data-toggle=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-float-buffer.html"><span class="token function">createFloatBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html">FloatArray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-float-buffer/index.html">FloatBuffer</a></div><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-float-buffer.html"><span class="token function">createFloatBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-float-buffer/index.html">FloatBuffer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":core:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-float-buffer.html"><span class="token function">createFloatBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html">FloatArray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-float-buffer/index.html">FloatBuffer</a></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-float-buffer.html"><span class="token function">createFloatBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-float-buffer/index.html">FloatBuffer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":core:dokkaHtmlPartial/jvmAndroidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-float-buffer.html"><span class="token function">createFloatBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html">FloatArray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-float-buffer/index.html">FloatBuffer</a></div><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-float-buffer.html"><span class="token function">createFloatBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-float-buffer/index.html">FloatBuffer</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1070711130%2FFunctions%2F617994450" anchor-label="createIntBuffer" id="-1070711130%2FFunctions%2F617994450" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="create-int-buffer.html"><span>create</span><wbr><span>Int</span><wbr><span><span>Buffer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1070711130%2FFunctions%2F617994450"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":core:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jsMain" data-filterable-set=":core:dokkaHtmlPartial/jsMain" data-toggle=":core:dokkaHtmlPartial/jsMain">js</button><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain" data-toggle=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-int-buffer.html"><span class="token function">createIntBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-int-buffer/index.html">IntBuffer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":core:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-int-buffer.html"><span class="token function">createIntBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-int-buffer/index.html">IntBuffer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":core:dokkaHtmlPartial/jvmAndroidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-int-buffer.html"><span class="token function">createIntBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-int-buffer/index.html">IntBuffer</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1738325561%2FFunctions%2F617994450" anchor-label="createShortBuffer" id="1738325561%2FFunctions%2F617994450" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="create-short-buffer.html"><span>create</span><wbr><span>Short</span><wbr><span><span>Buffer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1738325561%2FFunctions%2F617994450"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":core:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jsMain" data-filterable-set=":core:dokkaHtmlPartial/jsMain" data-toggle=":core:dokkaHtmlPartial/jsMain">js</button><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain" data-toggle=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-short-buffer.html"><span class="token function">createShortBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-short-buffer/index.html">ShortBuffer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":core:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-short-buffer.html"><span class="token function">createShortBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-short-buffer/index.html">ShortBuffer</a></div></div><div class="content sourceset-dependent-content" data-togglable=":core:dokkaHtmlPartial/jvmAndroidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="create-short-buffer.html"><span class="token function">createShortBuffer</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">capacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../core/com.lehaine.littlekt.file/-short-buffer/index.html">ShortBuffer</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+

@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>JvmVfs</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>littlekt</span>            </a>    </div>
+    <div>0.6.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":core:dokkaHtmlPartial/commonMain">common</button>
+                <button class="platform-tag platform-selector js-like" data-active="" data-filter=":core:dokkaHtmlPartial/jsMain">js</button>
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button>
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":core:dokkaHtmlPartial/jvmMain">jvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="core::com.lehaine.littlekt.file/JvmVfs///PointingToDeclaration//-764817950">
+  <div class="breadcrumbs"><a href="../../index.html">core</a><span class="delimiter">/</span><a href="../index.html">com.lehaine.littlekt.file</a><span class="delimiter">/</span><span class="current">JvmVfs</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Jvm</span><wbr><span><span>Vfs</span></span></h1>
+    <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+      <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">JvmVfs</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>context<span class="token operator">: </span><a href="../../../core/com.lehaine.littlekt/-context/index.html">Context</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>logger<span class="token operator">: </span><a href="../../../core/com.lehaine.littlekt.log/-logger/index.html">Logger</a><span class="token punctuation">, </span></span><span class="parameter ">storageBaseDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">assetsBaseDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span> : <a href="../../../core/com.lehaine.littlekt.file/-vfs/index.html">Vfs</a></div><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">Colton Daily</p></span></div>    </div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Extensions">Extensions</button></div>
+    <div class="tabs-section-body">
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="-705118717%2FConstructors%2F-764817950" anchor-label="JvmVfs" id="-705118717%2FConstructors%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-jvm-vfs.html"><span>Jvm</span><wbr><span><span>Vfs</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-705118717%2FConstructors%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-jvm-vfs.html"><span class="token function">JvmVfs</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="../../../core/com.lehaine.littlekt/-context/index.html">Context</a><span class="token punctuation">, </span></span><span class="parameter ">logger<span class="token operator">: </span><a href="../../../core/com.lehaine.littlekt.log/-logger/index.html">Logger</a><span class="token punctuation">, </span></span><span class="parameter ">storageBaseDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">assetsBaseDir<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="-1287533344%2FClasslikes%2F-764817950" anchor-label="Companion" id="-1287533344%2FClasslikes%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1287533344%2FClasslikes%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1109121108%2FClasslikes%2F-764817950" anchor-label="KeyValueEntry" id="-1109121108%2FClasslikes%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-key-value-entry/index.html"><span>Key</span><wbr><span>Value</span><wbr><span><span>Entry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1109121108%2FClasslikes%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-key-value-entry/index.html">KeyValueEntry</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>k<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>v<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-433765859%2FClasslikes%2F-764817950" anchor-label="KeyValueStore" id="-433765859%2FClasslikes%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-key-value-store/index.html"><span>Key</span><wbr><span>Value</span><wbr><span><span>Store</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-433765859%2FClasslikes%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-key-value-store/index.html">KeyValueStore</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>keyValues<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-key-value-entry/index.html">JvmVfs.KeyValueEntry</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="-568950430%2FFunctions%2F-764817950" anchor-label="close" id="-568950430%2FFunctions%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-568950430%2FFunctions%2F-764817950"><span><span>close</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-568950430%2FFunctions%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-568950430%2FFunctions%2F-764817950"><span class="token function">close</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Cancels this vfs job.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-915874176%2FFunctions%2F-764817950" anchor-label="get" id="-915874176%2FFunctions%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-915874176%2FFunctions%2F-764817950"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-915874176%2FFunctions%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="index.html#-915874176%2FFunctions%2F-764817950"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.file.vfs/-vfs-file/index.html#303834382%2FExtensions%2F-764817950">VfsFile</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-365919652%2FFunctions%2F-764817950" anchor-label="getAbsolutePath" id="-365919652%2FFunctions%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-365919652%2FFunctions%2F-764817950"><span>get</span><wbr><span>Absolute</span><wbr><span><span>Path</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-365919652%2FFunctions%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-365919652%2FFunctions%2F-764817950"><span class="token function">getAbsolutePath</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Get the absolute path of the queried <a href="index.html#-365919652%2FFunctions%2F-764817950">path</a> based off the Vfs path.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2073452648%2FFunctions%2F-764817950" anchor-label="launch" id="-2073452648%2FFunctions%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-2073452648%2FFunctions%2F-764817950"><span><span>launch</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2073452648%2FFunctions%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="index.html#-2073452648%2FFunctions%2F-764817950"><span class="token function">launch</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><span class="token keyword">suspend </span><span class="token keyword"></span><a href="../../../core/com.lehaine.littlekt.file/-vfs/index.html">Vfs</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Launches a new coroutine using the this vfs coroutine context. Use this to load assets asynchronously.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-99169111%2FFunctions%2F-764817950" anchor-label="load" id="-99169111%2FFunctions%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="load.html"><span><span>load</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-99169111%2FFunctions%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="load.html"><span class="token function">load</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../core/com.lehaine.littlekt.file/-byte-buffer/index.html">ByteBuffer</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Load an array of bytes from the storage directory based on the <a href="load.html">key</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1819783834%2FFunctions%2F-764817950" anchor-label="loadString" id="1819783834%2FFunctions%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="load-string.html"><span>load</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1819783834%2FFunctions%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="load-string.html"><span class="token function">loadString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Load a string from the storage directory based on the <a href="load-string.html">key</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="91604511%2FFunctions%2F-764817950" anchor-label="readBytes" id="91604511%2FFunctions%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#91604511%2FFunctions%2F-764817950"><span>read</span><wbr><span><span>Bytes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="91604511%2FFunctions%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="index.html#91604511%2FFunctions%2F-764817950"><span class="token function">readBytes</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">assetPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../core/com.lehaine.littlekt.file/-byte-buffer/index.html">ByteBuffer</a></div><div class="brief "><p class="paragraph">Loads a raw file into a <a href="../../../core/com.lehaine.littlekt.file/-byte-buffer/index.html">ByteBuffer</a></p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1951663098%2FFunctions%2F-764817950" anchor-label="readStream" id="1951663098%2FFunctions%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#1951663098%2FFunctions%2F-764817950"><span>read</span><wbr><span><span>Stream</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1951663098%2FFunctions%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="index.html#1951663098%2FFunctions%2F-764817950"><span class="token function">readStream</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">assetPath<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../../core/com.lehaine.littlekt.file/-byte-sequence-stream/index.html">ByteSequenceStream</a></div><div class="brief "><p class="paragraph">Opens a stream to a file into a <a href="../../../core/com.lehaine.littlekt.file/-byte-sequence-stream/index.html">ByteSequenceStream</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-70672908%2FFunctions%2F-764817950" anchor-label="store" id="-70672908%2FFunctions%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="store.html"><span><span>store</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-70672908%2FFunctions%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="store.html"><span class="token function">store</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Store array of bytes in the storage directory based on the <a href="store.html">key</a>.</p></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="store.html"><span class="token function">store</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Store a string in the storage directory based on the <a href="store.html">key</a>.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="1712189598%2FProperties%2F-764817950" anchor-label="baseDir" id="1712189598%2FProperties%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#1712189598%2FProperties%2F-764817950"><span>base</span><wbr><span><span>Dir</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1712189598%2FProperties%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><a data-name="1712189598%2FProperties%2F-764817950" anchor-label="baseDir" id="1712189598%2FProperties%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="index.html#1712189598%2FProperties%2F-764817950">baseDir</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-441662901%2FProperties%2F-764817950" anchor-label="context" id="-441662901%2FProperties%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-441662901%2FProperties%2F-764817950"><span><span>context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-441662901%2FProperties%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><a data-name="-441662901%2FProperties%2F-764817950" anchor-label="context" id="-441662901%2FProperties%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html#-441662901%2FProperties%2F-764817950">context</a><span class="token operator">: </span><a href="../../../core/com.lehaine.littlekt/-context/index.html">Context</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="232890153%2FProperties%2F-764817950" anchor-label="coroutineContext" id="232890153%2FProperties%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#232890153%2FProperties%2F-764817950"><span>coroutine</span><wbr><span><span>Context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="232890153%2FProperties%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><a data-name="232890153%2FProperties%2F-764817950" anchor-label="coroutineContext" id="232890153%2FProperties%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="index.html#232890153%2FProperties%2F-764817950">coroutineContext</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.coroutines/-coroutine-context/index.html">CoroutineContext</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1780813616%2FProperties%2F-764817950" anchor-label="logger" id="1780813616%2FProperties%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#1780813616%2FProperties%2F-764817950"><span><span>logger</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1780813616%2FProperties%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><a data-name="1780813616%2FProperties%2F-764817950" anchor-label="logger" id="1780813616%2FProperties%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html#1780813616%2FProperties%2F-764817950">logger</a><span class="token operator">: </span><a href="../../../core/com.lehaine.littlekt.log/-logger/index.html">Logger</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1475319586%2FProperties%2F-764817950" anchor-label="root" id="-1475319586%2FProperties%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="index.html#-1475319586%2FProperties%2F-764817950"><span><span>root</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1475319586%2FProperties%2F-764817950"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted" data-togglable="Properties">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmMain" data-filterable-set=":core:dokkaHtmlPartial/jvmMain" data-active="" data-toggle=":core:dokkaHtmlPartial/jvmMain">jvm</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/jvmMain"><a data-name="-1475319586%2FProperties%2F-764817950" anchor-label="root" id="-1475319586%2FProperties%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="index.html#-1475319586%2FProperties%2F-764817950">root</a><span class="token operator">: </span><a href="../../com.lehaine.littlekt.file.vfs/-vfs-file/index.html#303834382%2FExtensions%2F-764817950">VfsFile</a></div><div class="brief "><a data-name="-1475319586%2FProperties%2F-764817950" anchor-label="root" id="-1475319586%2FProperties%2F-764817950" data-filterable-set=":core:dokkaHtmlPartial/jvmMain"></a><p class="paragraph">The root <a href="../../com.lehaine.littlekt.file.vfs/-vfs-file/index.html#303834382%2FExtensions%2F-764817950">VfsFile</a> that this <a href="../../../core/com.lehaine.littlekt.file/-vfs/index.html">Vfs</a> starts from.</p></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="tabbedcontent">Extensions</h2>
+      <div class="table" data-togglable="Extensions"><a data-name="-47816950%2FExtensions%2F617994450" anchor-label="isOnRenderingThread" id="-47816950%2FExtensions%2F617994450" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain :core:dokkaHtmlPartial/jsMain :core:dokkaHtmlPartial/jvmAndroidMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.async/is-on-rendering-thread.html"><span>is</span><wbr><span>On</span><wbr><span>Rendering</span><wbr><span><span>Thread</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-47816950%2FExtensions%2F617994450"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted  with-platform-tabs" data-platform-hinted="data-platform-hinted">
+                  <div class="platform-bookmarks-row" data-toggle-list="data-toggle-list"><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain" data-active="" data-toggle=":core:dokkaHtmlPartial/commonMain">common</button><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jsMain" data-filterable-set=":core:dokkaHtmlPartial/jsMain" data-toggle=":core:dokkaHtmlPartial/jsMain">js</button><button class="platform-bookmark" data-filterable-current=":core:dokkaHtmlPartial/jvmAndroidMain" data-filterable-set=":core:dokkaHtmlPartial/jvmAndroidMain" data-toggle=":core:dokkaHtmlPartial/jvmAndroidMain">jvmAndroid</button></div>
+<div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">expect </span><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.async/is-on-rendering-thread.html"><span class="token function">isOnRenderingThread</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns true if the coroutine was launched from the rendering thread dispatcher.</p></div></div><div class="content sourceset-dependent-content" data-togglable=":core:dokkaHtmlPartial/jsMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.async/is-on-rendering-thread.html"><span class="token function">isOnRenderingThread</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div><div class="content sourceset-dependent-content" data-togglable=":core:dokkaHtmlPartial/jvmAndroidMain"><div class="symbol monospace"><span class="token keyword">actual </span><span class="token keyword"></span><span class="token keyword">fun </span><span data-unresolved-link="kotlinx.coroutines/CoroutineScope///PointingToDeclaration/">CoroutineScope</span><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.async/is-on-rendering-thread.html"><span class="token function">isOnRenderingThread</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div>                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+

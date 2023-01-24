@@ -1,0 +1,1060 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>VertexView</title>
+<link href="../../../images/logo-icon.svg" rel="icon" type="image/svg"><script>var pathToRoot = "../../../";</script>    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+<a href="../../../index.html">
+<span>littlekt</span>            </a>    </div>
+    <div>0.6.0-SNAPSHOT
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector common-like" data-active="" data-filter=":core:dokkaHtmlPartial/commonMain">common</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" id="content" pageids="core::com.lehaine.littlekt.graphics.util/VertexView///PointingToDeclaration//-2011752812">
+  <div class="breadcrumbs"><a href="../../index.html">core</a><span class="delimiter">/</span><a href="../index.html">com.lehaine.littlekt.graphics.util</a><span class="delimiter">/</span><span class="current">VertexView</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Vertex</span><wbr><span><span>View</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">VertexView</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>geometry<span class="token operator">: </span><a href="../-mesh-geometry/index.html">MeshGeometry</a><span class="token punctuation">, </span></span><span class="parameter ">index<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span> : <a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><p class="paragraph">A view of a vertex within the geometry <a href="../-mesh-geometry/index.html">MeshGeometry</a>.</p><p class="paragraph">Based the <a href="https://github.com/fabmax/kool/blob/main/kool-core/src/commonMain/kotlin/de/fabmax/kool/scene/geometry/VertexView.kt">kool</a> implementation.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="Types">Types</button><button class="section-tab" data-togglable="Constructors">Constructors</button><button class="section-tab" data-togglable="Functions">Functions</button><button class="section-tab" data-togglable="Properties">Properties</button><button class="section-tab" data-togglable="Extensions">Extensions</button><button class="section-tab" data-togglable="Parameters">Parameters</button></div>
+    <div class="tabs-section-body">
+      <h4 class="">Parameters</h4>
+      <div data-togglable="Parameters">
+        <div class="platform-hinted WithExtraAttributes" data-platform-hinted="data-platform-hinted" data-togglable="Parameters"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div data-togglable="Parameters"><div class="table" data-togglable="Parameters"><div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>geometry</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the geometry, vertices &amp; indices, of the mesh</p></div></div></div></div></div><div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain"><div class="main-subrow keyValue WithExtraAttributes"><div class=""><span class="inline-flex"><div><u><span><span>index</span></span></u></div></span></div><div><div class="title"><div data-togglable="Parameters"><p class="paragraph">the initial vertex index to view</p></div></div></div></div></div></div></div></div></div>
+      </div>
+      <h2 class="tabbedcontent">Constructors</h2>
+      <div class="table" data-togglable="Constructors"><a data-name="1248995935%2FConstructors%2F-2011752812" anchor-label="VertexView" id="1248995935%2FConstructors%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue TabbedContent">
+            <div class=""><span class="inline-flex">
+                <div><a href="-vertex-view.html"><span>Vertex</span><wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1248995935%2FConstructors%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="-vertex-view.html"><span class="token function">VertexView</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">geometry<span class="token operator">: </span><a href="../-mesh-geometry/index.html">MeshGeometry</a><span class="token punctuation">, </span></span><span class="parameter ">index<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Types</h2>
+      <div class="table" data-togglable="Types"><a data-name="-870607607%2FClasslikes%2F-2011752812" anchor-label="FloatView" id="-870607607%2FClasslikes%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="-float-view/index.html"><span>Float</span><wbr><span><span>View</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-870607607%2FClasslikes%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">inner </span><span class="token keyword">class </span><a href="-float-view/index.html">FloatView</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">attribOffset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Functions</h2>
+      <div class="table" data-togglable="Functions"><a data-name="1622789975%2FFunctions%2F-2011752812" anchor-label="add" id="1622789975%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/add.html"><span><span>add</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1622789975%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/add.html"><span class="token function">add</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/add.html"><span class="token function">add</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/add.html"><span class="token function">add</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/add.html"><span class="token function">add</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">x<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">y<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">z<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="213152163%2FFunctions%2F-2011752812" anchor-label="angleTo" id="213152163%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec2f/angle-to.html"><span>angle</span><wbr><span><span>To</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="213152163%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/angle-to.html"><span class="token function">angleTo</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math.geom/-angle/index.html">Angle</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1397905842%2FFunctions%2F-2011752812" anchor-label="cross" id="1397905842%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/cross.html"><span><span>cross</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1397905842%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/cross.html"><span class="token function">cross</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/cross.html"><span class="token function">cross</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1742426682%2FFunctions%2F-2011752812" anchor-label="distance" id="1742426682%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec2f/distance.html"><span><span>distance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1742426682%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/distance.html"><span class="token function">distance</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/distance.html"><span class="token function">distance</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1019267274%2FFunctions%2F-2011752812" anchor-label="divAssign" id="1019267274%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/div-assign.html"><span>div</span><wbr><span><span>Assign</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1019267274%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/div-assign.html"><span class="token function">divAssign</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/div-assign.html"><span class="token function">divAssign</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">div<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="545763180%2FFunctions%2F-2011752812" anchor-label="dot" id="545763180%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec2f/dot.html"><span><span>dot</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="545763180%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/dot.html"><span class="token function">dot</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/dot.html"><span class="token function">dot</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-421876399%2FFunctions%2F-2011752812" anchor-label="equals" id="-421876399%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec3f/equals.html"><span><span>equals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-421876399%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/equals.html"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks vector components for equality (using '==' operator). For better numeric stability consider using <a href="../../com.lehaine.littlekt.math/-vec3f/is-fuzzy-equal.html">isFuzzyEqual</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-845891713%2FFunctions%2F-2011752812" anchor-label="get" id="-845891713%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-845891713%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">i<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="787549091%2FFunctions%2F-2011752812" anchor-label="getColorAttribute" id="787549091%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-color-attribute.html"><span>get</span><wbr><span>Color</span><wbr><span><span>Attribute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="787549091%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-color-attribute.html"><span class="token function">getColorAttribute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">attribute<span class="token operator">: </span><a href="../../com.lehaine.littlekt.graphics/-vertex-attribute/index.html">VertexAttribute</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.graphics/-mutable-color/index.html">MutableColor</a><span class="token operator">?</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="299102090%2FFunctions%2F-2011752812" anchor-label="getFloatAttribute" id="299102090%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-float-attribute.html"><span>get</span><wbr><span>Float</span><wbr><span><span>Attribute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="299102090%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-float-attribute.html"><span class="token function">getFloatAttribute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">attribute<span class="token operator">: </span><a href="../../com.lehaine.littlekt.graphics/-vertex-attribute/index.html">VertexAttribute</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-float-view/index.html">VertexView.FloatView</a><span class="token operator">?</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1937738590%2FFunctions%2F-2011752812" anchor-label="getVec2fAttribute" id="1937738590%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-vec2f-attribute.html"><span>get</span><wbr><span>Vec2f</span><wbr><span><span>Attribute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1937738590%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-vec2f-attribute.html"><span class="token function">getVec2fAttribute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">attribute<span class="token operator">: </span><a href="../../com.lehaine.littlekt.graphics/-vertex-attribute/index.html">VertexAttribute</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a><span class="token operator">?</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1408819551%2FFunctions%2F-2011752812" anchor-label="getVec3fAttribute" id="1408819551%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-vec3f-attribute.html"><span>get</span><wbr><span>Vec3f</span><wbr><span><span>Attribute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1408819551%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-vec3f-attribute.html"><span class="token function">getVec3fAttribute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">attribute<span class="token operator">: </span><a href="../../com.lehaine.littlekt.graphics/-vertex-attribute/index.html">VertexAttribute</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a><span class="token operator">?</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="879900512%2FFunctions%2F-2011752812" anchor-label="getVec4fAttribute" id="879900512%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-vec4f-attribute.html"><span>get</span><wbr><span>Vec4f</span><wbr><span><span>Attribute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="879900512%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-vec4f-attribute.html"><span class="token function">getVec4fAttribute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">attribute<span class="token operator">: </span><a href="../../com.lehaine.littlekt.graphics/-vertex-attribute/index.html">VertexAttribute</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec4f/index.html">MutableVec4f</a><span class="token operator">?</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-833853187%2FFunctions%2F-2011752812" anchor-label="getVec4iAttribute" id="-833853187%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="get-vec4i-attribute.html"><span>get</span><wbr><span>Vec4i</span><wbr><span><span>Attribute</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-833853187%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-vec4i-attribute.html"><span class="token function">getVec4iAttribute</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">attribute<span class="token operator">: </span><a href="../../com.lehaine.littlekt.graphics/-vertex-attribute/index.html">VertexAttribute</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec4i/index.html">MutableVec4i</a><span class="token operator">?</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1190196107%2FFunctions%2F-2011752812" anchor-label="hashCode" id="-1190196107%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec3f/hash-code.html"><span>hash</span><wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1190196107%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/hash-code.html"><span class="token function">hashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="268101546%2FFunctions%2F-2011752812" anchor-label="isFuzzyEqual" id="268101546%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec2f/is-fuzzy-equal.html"><span>is</span><wbr><span>Fuzzy</span><wbr><span><span>Equal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="268101546%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/is-fuzzy-equal.html"><span class="token function">isFuzzyEqual</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a><span class="token punctuation">, </span></span><span class="parameter ">eps<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>FUZZY_EQ_F</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks vector components for equality using <a href="../../com.lehaine.littlekt.math/is-fuzzy-equal.html">com.lehaine.littlekt.math.isFuzzyEqual</a>, that is all components must have a difference less or equal <a href="../../com.lehaine.littlekt.math/-vec2f/is-fuzzy-equal.html">eps</a>.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/is-fuzzy-equal.html"><span class="token function">isFuzzyEqual</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">eps<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span>FUZZY_EQ_F</span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Checks vector components for equality using <a href="../../com.lehaine.littlekt.math/is-fuzzy-equal.html">com.lehaine.littlekt.math.isFuzzyEqual</a>, that is all components must have a difference less or equal <a href="../../com.lehaine.littlekt.math/-vec3f/is-fuzzy-equal.html">eps</a>.</p></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2136021845%2FFunctions%2F-2011752812" anchor-label="length" id="-2136021845%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec2f/length.html"><span><span>length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2136021845%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/length.html"><span class="token function">length</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1626500360%2FFunctions%2F-2011752812" anchor-label="minusAssign" id="-1626500360%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/minus-assign.html"><span>minus</span><wbr><span><span>Assign</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1626500360%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/minus-assign.html"><span class="token function">minusAssign</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="772141293%2FFunctions%2F-2011752812" anchor-label="mix" id="772141293%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec2f/mix.html"><span><span>mix</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="772141293%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/mix.html"><span class="token function">mix</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a><span class="token punctuation">, </span></span><span class="parameter ">weight<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/mix.html"><span class="token function">mix</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">weight<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1367226652%2FFunctions%2F-2011752812" anchor-label="mul" id="-1367226652%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/mul.html"><span><span>mul</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1367226652%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/mul.html"><span class="token function">mul</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">matrix<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mat4/index.html">Mat4</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/mul.html"><span class="token function">mul</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/mul.html"><span class="token function">mul</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/mul.html"><span class="token function">mul</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1596076328%2FFunctions%2F-2011752812" anchor-label="norm" id="-1596076328%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/norm.html"><span><span>norm</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1596076328%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/norm.html"><span class="token function">norm</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/norm.html"><span class="token function">norm</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/norm.html"><span class="token function">norm</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-516741639%2FFunctions%2F-2011752812" anchor-label="planeSpace" id="-516741639%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec3f/plane-space.html"><span>plane</span><wbr><span><span>Space</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-516741639%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/plane-space.html"><span class="token function">planeSpace</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">p<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a><span class="token punctuation">, </span></span><span class="parameter ">q<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-829392748%2FFunctions%2F-2011752812" anchor-label="plusAssign" id="-829392748%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/plus-assign.html"><span>plus</span><wbr><span><span>Assign</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-829392748%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/plus-assign.html"><span class="token function">plusAssign</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-677875195%2FFunctions%2F-2011752812" anchor-label="resetToZero" id="-677875195%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="reset-to-zero.html"><span>reset</span><wbr><span>To</span><wbr><span><span>Zero</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-677875195%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="reset-to-zero.html"><span class="token function">resetToZero</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1725089224%2FFunctions%2F-2011752812" anchor-label="rotate" id="-1725089224%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/rotate.html"><span><span>rotate</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1725089224%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/rotate.html"><span class="token function">rotate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">angle<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math.geom/-angle/index.html">Angle</a><span class="token punctuation">, </span></span><span class="parameter ">axis<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/rotate.html"><span class="token function">rotate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">angle<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math.geom/-angle/index.html">Angle</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/rotate.html"><span class="token function">rotate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">angle<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math.geom/-angle/index.html">Angle</a><span class="token punctuation">, </span></span><span class="parameter ">axis<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/rotate.html"><span class="token function">rotate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">angle<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math.geom/-angle/index.html">Angle</a><span class="token punctuation">, </span></span><span class="parameter ">axisX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">axisY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">axisZ<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/rotate.html"><span class="token function">rotate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">angle<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math.geom/-angle/index.html">Angle</a><span class="token punctuation">, </span></span><span class="parameter ">axisX<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">axisY<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">axisZ<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="538170476%2FFunctions%2F-2011752812" anchor-label="scale" id="538170476%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/scale.html"><span><span>scale</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="538170476%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/scale.html"><span class="token function">scale</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">factor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/scale.html"><span class="token function">scale</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">factor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/scale.html"><span class="token function">scale</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">factor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/scale.html"><span class="token function">scale</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">xFactor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">yFactor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">zFactor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1006560802%2FFunctions%2F-2011752812" anchor-label="set" id="1006560802%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="set.html"><span><span>set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1006560802%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set.html"><span class="token function">set</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="index.html">VertexView</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/set.html"><span class="token function">set</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="set.html"><span class="token function">set</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">i<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">v<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/set.html"><span class="token function">set</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">x<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">y<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">z<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1447352537%2FFunctions%2F-2011752812" anchor-label="setLength" id="-1447352537%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec2f/set-length.html"><span>set</span><wbr><span><span>Length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1447352537%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/set-length.html"><span class="token function">setLength</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">length<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1523720145%2FFunctions%2F-2011752812" anchor-label="setSqrLength" id="-1523720145%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec2f/set-sqr-length.html"><span>set</span><wbr><span>Sqr</span><wbr><span><span>Length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1523720145%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/set-sqr-length.html"><span class="token function">setSqrLength</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">sqrLength<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="652809836%2FFunctions%2F-2011752812" anchor-label="sqrDistance" id="652809836%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec2f/sqr-distance.html"><span>sqr</span><wbr><span><span>Distance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="652809836%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/sqr-distance.html"><span class="token function">sqrDistance</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/sqr-distance.html"><span class="token function">sqrDistance</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2044466448%2FFunctions%2F-2011752812" anchor-label="sqrLength" id="2044466448%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec3f/sqr-length.html"><span>sqr</span><wbr><span><span>Length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2044466448%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/sqr-length.html"><span class="token function">sqrLength</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1605996158%2FFunctions%2F-2011752812" anchor-label="subtract" id="1605996158%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/subtract.html"><span><span>subtract</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1605996158%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/subtract.html"><span class="token function">subtract</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/subtract.html"><span class="token function">subtract</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/subtract.html"><span class="token function">subtract</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1935573132%2FFunctions%2F-2011752812" anchor-label="times" id="1935573132%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec2f/times.html"><span><span>times</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1935573132%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/times.html"><span class="token function">times</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/times.html"><span class="token function">times</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1535735522%2FFunctions%2F-2011752812" anchor-label="timesAssign" id="1535735522%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/times-assign.html"><span>times</span><wbr><span><span>Assign</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1535735522%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/times-assign.html"><span class="token function">timesAssign</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">factor<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1017132626%2FFunctions%2F-2011752812" anchor-label="toMutableVec2" id="-1017132626%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec2f/to-mutable-vec2.html"><span>to</span><wbr><span>Mutable</span><wbr><span><span>Vec2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1017132626%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/to-mutable-vec2.html"><span class="token function">toMutableVec2</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/to-mutable-vec2.html"><span class="token function">toMutableVec2</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2069183761%2FFunctions%2F-2011752812" anchor-label="toMutableVec3" id="-2069183761%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec3f/to-mutable-vec3.html"><span>to</span><wbr><span>Mutable</span><wbr><span><span>Vec3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2069183761%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/to-mutable-vec3.html"><span class="token function">toMutableVec3</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/to-mutable-vec3.html"><span class="token function">toMutableVec3</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1368362172%2FFunctions%2F-2011752812" anchor-label="toString" id="-1368362172%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec3f/to-string.html"><span>to</span><wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1368362172%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="995801784%2FFunctions%2F-2011752812" anchor-label="toVec2" id="995801784%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec2f/to-vec2.html"><span>to</span><wbr><span><span>Vec2</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="995801784%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/to-vec2.html"><span class="token function">toVec2</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="2052313590%2FFunctions%2F-2011752812" anchor-label="toVec3" id="2052313590%2FFunctions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-vec3f/to-vec3.html"><span>to</span><wbr><span><span>Vec3</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2052313590%2FFunctions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/to-vec3.html"><span class="token function">toVec3</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="">Properties</h2>
+      <div class="table" data-togglable="Properties"><a data-name="-1412413555%2FProperties%2F-2011752812" anchor-label="array" id="-1412413555%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/array.html"><span><span>array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1412413555%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="-1412413555%2FProperties%2F-2011752812" anchor-label="array" id="-1412413555%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/array.html">array</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html">FloatArray</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-320369519%2FProperties%2F-2011752812" anchor-label="attributeViews" id="-320369519%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="attribute-views.html"><span>attribute</span><wbr><span><span>Views</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-320369519%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="-320369519%2FProperties%2F-2011752812" anchor-label="attributeViews" id="-320369519%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="attribute-views.html">attributeViews</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html">Map</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1853721292%2FProperties%2F-2011752812" anchor-label="color" id="-1853721292%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="color.html"><span><span>color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1853721292%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="-1853721292%2FProperties%2F-2011752812" anchor-label="color" id="-1853721292%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="color.html">color</a><span class="token operator">: </span><a href="../../com.lehaine.littlekt.graphics/-mutable-color/index.html">MutableColor</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-122264996%2FProperties%2F-2011752812" anchor-label="colorPacked" id="-122264996%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="color-packed.html"><span>color</span><wbr><span><span>Packed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-122264996%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="-122264996%2FProperties%2F-2011752812" anchor-label="colorPacked" id="-122264996%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="color-packed.html">colorPacked</a><span class="token operator">: </span><a href="-float-view/index.html">VertexView.FloatView</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-948094511%2FProperties%2F-2011752812" anchor-label="geometry" id="-948094511%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="geometry.html"><span><span>geometry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-948094511%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="-948094511%2FProperties%2F-2011752812" anchor-label="geometry" id="-948094511%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="geometry.html">geometry</a><span class="token operator">: </span><a href="../-mesh-geometry/index.html">MeshGeometry</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1281120603%2FProperties%2F-2011752812" anchor-label="index" id="-1281120603%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="--index--.html"><span><span>index</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1281120603%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="-1281120603%2FProperties%2F-2011752812" anchor-label="index" id="-1281120603%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="--index--.html">index</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1805238662%2FProperties%2F-2011752812" anchor-label="joints" id="-1805238662%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="joints.html"><span><span>joints</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1805238662%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="-1805238662%2FProperties%2F-2011752812" anchor-label="joints" id="-1805238662%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="joints.html">joints</a><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec4i/index.html">MutableVec4i</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="487709820%2FProperties%2F-2011752812" anchor-label="normal" id="487709820%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="normal.html"><span><span>normal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="487709820%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="487709820%2FProperties%2F-2011752812" anchor-label="normal" id="487709820%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="normal.html">normal</a><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="693048570%2FProperties%2F-2011752812" anchor-label="position" id="693048570%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="position.html"><span><span>position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="693048570%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="693048570%2FProperties%2F-2011752812" anchor-label="position" id="693048570%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="position.html">position</a><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-2144575822%2FProperties%2F-2011752812" anchor-label="texCoords" id="-2144575822%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="tex-coords.html"><span>tex</span><wbr><span><span>Coords</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2144575822%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="-2144575822%2FProperties%2F-2011752812" anchor-label="texCoords" id="-2144575822%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="tex-coords.html">texCoords</a><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1030593564%2FProperties%2F-2011752812" anchor-label="weights" id="1030593564%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="weights.html"><span><span>weights</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1030593564%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="1030593564%2FProperties%2F-2011752812" anchor-label="weights" id="1030593564%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="weights.html">weights</a><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec4f/index.html">MutableVec4f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1590888754%2FProperties%2F-2011752812" anchor-label="x" id="-1590888754%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/x.html"><span><span>x</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1590888754%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="-1590888754%2FProperties%2F-2011752812" anchor-label="x" id="-1590888754%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/x.html">x</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1559868947%2FProperties%2F-2011752812" anchor-label="y" id="-1559868947%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/y.html"><span><span>y</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1559868947%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="-1559868947%2FProperties%2F-2011752812" anchor-label="y" id="-1559868947%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/y.html">y</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1528849140%2FProperties%2F-2011752812" anchor-label="z" id="-1528849140%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/z.html"><span><span>z</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1528849140%2FProperties%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted" data-togglable="Properties"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><a data-name="-1528849140%2FProperties%2F-2011752812" anchor-label="z" id="-1528849140%2FProperties%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">var </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/z.html">z</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="tabbedcontent">Extensions</h2>
+      <div class="table" data-togglable="Extensions"><a data-name="-416172995%2FExtensions%2F-2011752812" anchor-label="distanceToEdge" id="-416172995%2FExtensions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/distance-to-edge.html"><span>distance</span><wbr><span>To</span><wbr><span><span>Edge</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-416172995%2FExtensions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/distance-to-edge.html"><span class="token function">distanceToEdge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">edgeA<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">edgeB<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/distance-to-edge.html"><span class="token function">distanceToEdge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">edgeA<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a><span class="token punctuation">, </span></span><span class="parameter ">edgeB<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="727920943%2FExtensions%2F-2011752812" anchor-label="distanceToLine" id="727920943%2FExtensions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/distance-to-line.html"><span>distance</span><wbr><span>To</span><wbr><span><span>Line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="727920943%2FExtensions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/distance-to-line.html"><span class="token function">distanceToLine</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lineA<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">lineB<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1312317233%2FExtensions%2F-2011752812" anchor-label="distanceToRay" id="-1312317233%2FExtensions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/distance-to-ray.html"><span>distance</span><wbr><span>To</span><wbr><span><span>Ray</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1312317233%2FExtensions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/distance-to-ray.html"><span class="token function">distanceToRay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ray<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-ray/index.html">Ray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/distance-to-ray.html"><span class="token function">distanceToRay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">origin<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">direction<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="926264330%2FExtensions%2F-2011752812" anchor-label="nearestPointOnEdge" id="926264330%2FExtensions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/nearest-point-on-edge.html"><span>nearest</span><wbr><span>Point</span><wbr><span>On</span><wbr><span><span>Edge</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="926264330%2FExtensions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/nearest-point-on-edge.html"><span class="token function">nearestPointOnEdge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">edgeA<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">edgeB<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/nearest-point-on-edge.html"><span class="token function">nearestPointOnEdge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">edgeA<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a><span class="token punctuation">, </span></span><span class="parameter ">edgeB<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1352686484%2FExtensions%2F-2011752812" anchor-label="nearestPointOnLine" id="-1352686484%2FExtensions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/nearest-point-on-line.html"><span>nearest</span><wbr><span>Point</span><wbr><span>On</span><wbr><span><span>Line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1352686484%2FExtensions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/nearest-point-on-line.html"><span class="token function">nearestPointOnLine</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lineA<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">lineB<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="1979347084%2FExtensions%2F-2011752812" anchor-label="nearestPointOnRay" id="1979347084%2FExtensions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/nearest-point-on-ray.html"><span>nearest</span><wbr><span>Point</span><wbr><span>On</span><wbr><span><span>Ray</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1979347084%2FExtensions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/nearest-point-on-ray.html"><span class="token function">nearestPointOnRay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">origin<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">direction<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">result<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-1904147729%2FExtensions%2F-2011752812" anchor-label="sqrDistanceToEdge" id="-1904147729%2FExtensions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/sqr-distance-to-edge.html"><span>sqr</span><wbr><span>Distance</span><wbr><span>To</span><wbr><span><span>Edge</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1904147729%2FExtensions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/sqr-distance-to-edge.html"><span class="token function">sqrDistanceToEdge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">edgeA<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">edgeB<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/sqr-distance-to-edge.html"><span class="token function">sqrDistanceToEdge</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">edgeA<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a><span class="token punctuation">, </span></span><span class="parameter ">edgeB<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-339741873%2FExtensions%2F-2011752812" anchor-label="sqrDistanceToLine" id="-339741873%2FExtensions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/sqr-distance-to-line.html"><span>sqr</span><wbr><span>Distance</span><wbr><span>To</span><wbr><span><span>Line</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-339741873%2FExtensions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/sqr-distance-to-line.html"><span class="token function">sqrDistanceToLine</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">lineA<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">lineB<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="521417483%2FExtensions%2F-2011752812" anchor-label="sqrDistanceToRay" id="521417483%2FExtensions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/sqr-distance-to-ray.html"><span>sqr</span><wbr><span>Distance</span><wbr><span>To</span><wbr><span><span>Ray</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="521417483%2FExtensions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/sqr-distance-to-ray.html"><span class="token function">sqrDistanceToRay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">ray<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-ray/index.html">Ray</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/sqr-distance-to-ray.html"><span class="token function">sqrDistanceToRay</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">origin<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">, </span></span><span class="parameter ">direction<span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+<a data-name="-739493534%2FExtensions%2F-2011752812" anchor-label="xy" id="-739493534%2FExtensions%2F-2011752812" data-filterable-set=":core:dokkaHtmlPartial/commonMain"></a>
+        <div class="table-row" data-filterable-current=":core:dokkaHtmlPartial/commonMain" data-filterable-set=":core:dokkaHtmlPartial/commonMain">
+          <div class="main-subrow keyValue ">
+            <div class=""><span class="inline-flex">
+                <div><a href="../../com.lehaine.littlekt.math/xy.html"><span><span>xy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739493534%2FExtensions%2F-2011752812"></span>
+                  <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                </span></span></div>
+            <div>
+              <div class="title">
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":core:dokkaHtmlPartial/commonMain"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-mutable-vec3f/index.html">MutableVec3f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/xy.html"><span class="token function">xy</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-mutable-vec2f/index.html">MutableVec2f</a></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="../../com.lehaine.littlekt.math/-vec3f/index.html">Vec3f</a><span class="token punctuation">.</span><a href="../../com.lehaine.littlekt.math/xy.html"><span class="token function">xy</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../com.lehaine.littlekt.math/-vec2f/index.html">Vec2f</a></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span class="pull-right"><span>Generated by </span><a href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+
+</body></html>
+
